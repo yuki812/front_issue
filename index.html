@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoアプリ</title>
+    <!-- Bootstrap CSSの読み込み -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- カスタムフォントの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- カスタムスタイルの読み込み -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-title-container">
+        <h2 class="main-title">ToDoリスト</h2>
+    </div>
+    <div class="container">
+        <form id="todo-form">
+            <div class="form-group">
+                <input type="text" id="new-todo" class="form-control" placeholder="新しいタスクを入力">
+            </div>
+            <div class="form-group">
+                <input type="date" id="deadline" class="form-control" placeholder="期限日">
+            </div>
+            <button type="submit" class="btn btn-info">追加</button>
+        </form>
+
+        <div class="form-group">
+            <input type="text" id="search-todo" class="form-control" placeholder="タスクを検索">
+        </div>
+
+        <ul id="todo-list" class="list-group mt-3">
+            <!-- JavaScriptで動的にリストアイテムが追加される -->
+        </ul>
+    </div>
+
+    <!-- Bootstrapと依存関係のJavaScriptの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- カスタムJavaScriptの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* カスタムフォント */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f4f4; /* ソフトな背景色 */
+}
+
+/* モダンなカラーパレット */
+:root {
+    --main-color: #ff5722; /* 鮮やかなオレンジ */
+    --secondary-color: #4caf50; /* 明るい緑 */
+}
+
+/* リストアイテムのヘッダー部分のスタイル */
+.todo-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; /* ハンドポインターを表示 */
+}
+
+/* リストアイテムのタイトル */
+.todo-item-title {
+    font-weight: bold;
+}
+
+/* 折りたたみトグルボタンのスタイリング */
+.toggle-button {
+    font-size: 20px; /* トグルボタンのサイズ */
+    margin-left: auto; /* 左側のマージンを自動で調整し、右寄せにする */
+}
+
+
+/* 折りたたまれるコンテンツのスタイル */
+.todo-item-content {
+    display: none; /* 初期状態では非表示 */
+    padding-top: 10px; /* コンテンツとヘッダーの間の余白 */
+}
+
+/* ボタンとフォームのスタイリング */
+.btn-info {
+    background-color: var(--main-color);
+    border: none;
+    font-size: 14px; /* フォントサイズ調整 */
+    padding: 8px 12px; /* パディング調整 */
+    border-radius: 5px; /* ボーダーラジアス調整 */
+}
+
+/* 日付入力フィールドと送信ボタンの間のマージンを削除 */
+#deadline, .btn-info {
+    margin-bottom: 0;
+}
+
+/* フォームの下の余白を追加 */
+#todo-form {
+    margin-bottom: 5px; /* フォーム全体の下に5pxのマージンを追加 */
+}
+
+.form-control {
+    font-size: 16px; /* フォントサイズ調整 */
+    padding: 10px; /* パディング調整 */
+}
+
+.form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 34, 0.25);
+}
+
+/* リストアイテムのカードデザイン */
+.list-group-item {
+    background-color: white;
+    margin-bottom: 10px; /* 下のマージン */
+    padding: 10px 15px; /* パディングを調整して縦幅を減少 */
+    font-size: 14px; /* フォントサイズ */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影の効果を軽減 */
+    transition: transform 0.3s ease;
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* アイテムを縦方向に中央揃えにする */
+    text-align: left; /* テキストは左寄せ */
+}
+
+.list-group-item:hover {
+    transform: translateY(-3px); /* ホバー時の効果を軽減 */
+}
+
+.main-title-container {
+    background-color: #ffda72; /* #希望の色 を実際の色コードに置き換えてください */
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px; /* 下のマージンを追加 */
+}
+
+.main-title {
+    margin: 0;
+    padding: 10px 0;
+    /* main-title のその他のスタイリング */
+}
+
+/* 消去ボタンのスタイル調整 */
+.btn-sm {
+    font-size: 12px; /* フォントサイズを小さく */
+    padding: 5px 8px; /* パディングを小さく */
+}
+
+/* リストアイテムの高さ調整 */
+.list-group-item {
+    padding: 8px 15px; /* パディングを調整して縦幅を減少 */
+    /* 他のスタイル設定はそのまま */
+}
+
+/* 日付表示のスタイリング */
+.small {
+    font-size: 0.8em;
+    color: gray;
+}
